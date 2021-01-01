@@ -6,6 +6,7 @@
 //
 
 import Cocoa
+import MetalKit
 
 class Document: NSPersistentDocument {
 
@@ -25,4 +26,12 @@ class Document: NSPersistentDocument {
         self.addWindowController(windowController)
     }
 
+}
+
+struct PUVertex {
+    var position: SIMD3<Float>
+}
+
+struct PUUniform {
+    var screenSize: SIMD2<Float>
 }

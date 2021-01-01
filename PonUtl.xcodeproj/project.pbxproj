@@ -15,6 +15,9 @@
 		7BADD618259F301600AE007A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BADD616259F301600AE007A /* Main.storyboard */; };
 		7BADD624259F301600AE007A /* PonUtlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BADD623259F301600AE007A /* PonUtlTests.swift */; };
 		7BADD62F259F301600AE007A /* PonUtlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BADD62E259F301600AE007A /* PonUtlUITests.swift */; };
+		7BADD641259F30E700AE007A /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BADD640259F30E700AE007A /* MetalKit.framework */; };
+		7BADD643259F30EF00AE007A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BADD642259F30EF00AE007A /* CoreMedia.framework */; };
+		7BADD648259F430D00AE007A /* DefaultShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 7BADD647259F430D00AE007A /* DefaultShader.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		7BADD62A259F301600AE007A /* PonUtlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PonUtlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BADD62E259F301600AE007A /* PonUtlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PonUtlUITests.swift; sourceTree = "<group>"; };
 		7BADD630259F301600AE007A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BADD640259F30E700AE007A /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		7BADD642259F30EF00AE007A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		7BADD647259F430D00AE007A /* DefaultShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = DefaultShader.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BADD643259F30EF00AE007A /* CoreMedia.framework in Frameworks */,
+				7BADD641259F30E700AE007A /* MetalKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +92,7 @@
 				7BADD622259F301600AE007A /* PonUtlTests */,
 				7BADD62D259F301600AE007A /* PonUtlUITests */,
 				7BADD609259F301500AE007A /* Products */,
+				7BADD63F259F30E700AE007A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +111,7 @@
 			children = (
 				7BADD60B259F301500AE007A /* AppDelegate.swift */,
 				7BADD60D259F301500AE007A /* ViewController.swift */,
+				7BADD647259F430D00AE007A /* DefaultShader.metal */,
 				7BADD60F259F301500AE007A /* Document.swift */,
 				7BADD614259F301600AE007A /* Assets.xcassets */,
 				7BADD616259F301600AE007A /* Main.storyboard */,
@@ -128,6 +138,15 @@
 				7BADD630259F301600AE007A /* Info.plist */,
 			);
 			path = PonUtlUITests;
+			sourceTree = "<group>";
+		};
+		7BADD63F259F30E700AE007A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BADD642259F30EF00AE007A /* CoreMedia.framework */,
+				7BADD640259F30E700AE007A /* MetalKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +282,7 @@
 				7BADD60E259F301500AE007A /* ViewController.swift in Sources */,
 				7BADD60C259F301500AE007A /* AppDelegate.swift in Sources */,
 				7BADD610259F301500AE007A /* Document.swift in Sources */,
+				7BADD648259F430D00AE007A /* DefaultShader.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

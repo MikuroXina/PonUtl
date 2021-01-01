@@ -28,8 +28,9 @@ vertex Varying vertex_shader(
 ) {
     float3 pos = vert[id].pos;
     
-    Varying out{float4(pos, 1.0), float3((pos.xy + float2(1.0)) / 2.0, 0.7)};
+    Varying out{float4(pos, 1.0), float3(1.0)};
     out.position.xy /= (uniform.screen_size / 2.0);
+    out.color = float3((out.position.xy + float2(1.0)) / 2.0, 0.7);
     return out;
 }
 

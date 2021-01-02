@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20C69" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Event" representedClassName="Event" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="timepoint" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="rules" toMany="YES" minCount="1" deletionRule="Nullify" destinationEntity="Rule" inverseName="event" inverseEntity="Rule"/>
+        <relationship name="scene" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Scene" inverseName="events" inverseEntity="Scene"/>
+    </entity>
+    <entity name="Project" representedClassName="Project" syncable="YES" codeGenerationType="class">
+        <relationship name="scenes" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Scene" inverseName="project" inverseEntity="Scene"/>
+    </entity>
+    <entity name="Rule" representedClassName="Rule" isAbstract="YES" syncable="YES" codeGenerationType="class">
+        <relationship name="event" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Event" inverseName="rules" inverseEntity="Event"/>
+    </entity>
+    <entity name="Scene" representedClassName="Scene" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="events" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Event" inverseName="scene" inverseEntity="Event"/>
+        <relationship name="project" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Project" inverseName="scenes" inverseEntity="Project"/>
+    </entity>
+    <entity name="ShapeRule" representedClassName="ShapeRule" parentEntity="Rule" syncable="YES" codeGenerationType="class">
+        <attribute name="color" attributeType="Integer 32" defaultValueString="-1" usesScalarValueType="NO"/>
+        <attribute name="degress" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <elements>
+        <element name="ShapeRule" positionX="4.106201171875" positionY="-12.4425048828125" width="128" height="73"/>
+        <element name="Event" positionX="-202.5532836914062" positionY="-138.8121032714844" width="128" height="103"/>
+        <element name="Scene" positionX="-394.6847534179688" positionY="9.982940673828125" width="128" height="88"/>
+        <element name="Project" positionX="-411.1807861328125" positionY="-131.8173828125" width="128" height="58"/>
+        <element name="Rule" positionX="5.0120849609375" positionY="-138.7372436523438" width="128" height="58"/>
+    </elements>
+</model>

@@ -20,6 +20,8 @@
 		7BADD648259F430D00AE007A /* DefaultShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 7BADD647259F430D00AE007A /* DefaultShader.metal */; };
 		7BADD652259FFF2900AE007A /* MetalRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BADD651259FFF2900AE007A /* MetalRenderer.swift */; };
 		7BADD65D25A017DD00AE007A /* RuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BADD65C25A017DD00AE007A /* RuleViewController.swift */; };
+		7BADD66625A064FF00AE007A /* PUModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7BADD66425A064FF00AE007A /* PUModel.xcdatamodeld */; };
+		7BADD67625A0A6E000AE007A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BADD67525A0A6E000AE007A /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		7BADD647259F430D00AE007A /* DefaultShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = DefaultShader.metal; sourceTree = "<group>"; };
 		7BADD651259FFF2900AE007A /* MetalRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalRenderer.swift; sourceTree = "<group>"; };
 		7BADD65C25A017DD00AE007A /* RuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleViewController.swift; sourceTree = "<group>"; };
+		7BADD66525A064FF00AE007A /* PUModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PUModel.xcdatamodel; sourceTree = "<group>"; };
+		7BADD67525A0A6E000AE007A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				7BADD65C25A017DD00AE007A /* RuleViewController.swift */,
+				7BADD66425A064FF00AE007A /* PUModel.xcdatamodeld */,
 				7BADD60B259F301500AE007A /* AppDelegate.swift */,
 				7BADD60D259F301500AE007A /* PreviewViewController.swift */,
 				7BADD651259FFF2900AE007A /* MetalRenderer.swift */,
@@ -121,6 +126,7 @@
 				7BADD60F259F301500AE007A /* Document.swift */,
 				7BADD614259F301600AE007A /* Assets.xcassets */,
 				7BADD616259F301600AE007A /* Main.storyboard */,
+				7BADD67525A0A6E000AE007A /* MainViewController.swift */,
 				7BADD619259F301600AE007A /* Info.plist */,
 				7BADD61A259F301600AE007A /* PonUtl.entitlements */,
 				7BADD611259F301500AE007A /* Document.xcdatamodeld */,
@@ -286,9 +292,11 @@
 			files = (
 				7BADD613259F301500AE007A /* Document.xcdatamodeld in Sources */,
 				7BADD60E259F301500AE007A /* PreviewViewController.swift in Sources */,
+				7BADD66625A064FF00AE007A /* PUModel.xcdatamodeld in Sources */,
 				7BADD652259FFF2900AE007A /* MetalRenderer.swift in Sources */,
 				7BADD60C259F301500AE007A /* AppDelegate.swift in Sources */,
 				7BADD65D25A017DD00AE007A /* RuleViewController.swift in Sources */,
+				7BADD67625A0A6E000AE007A /* MainViewController.swift in Sources */,
 				7BADD610259F301500AE007A /* Document.swift in Sources */,
 				7BADD648259F430D00AE007A /* DefaultShader.metal in Sources */,
 			);
@@ -467,6 +475,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = MikuroXina.PonUtl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -488,6 +497,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = MikuroXina.PonUtl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -627,6 +637,16 @@
 			);
 			currentVersion = 7BADD612259F301500AE007A /* Document.xcdatamodel */;
 			path = Document.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		7BADD66425A064FF00AE007A /* PUModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7BADD66525A064FF00AE007A /* PUModel.xcdatamodel */,
+			);
+			currentVersion = 7BADD66525A064FF00AE007A /* PUModel.xcdatamodel */;
+			path = PUModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

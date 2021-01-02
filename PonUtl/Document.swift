@@ -13,6 +13,9 @@ class Document: NSPersistentDocument {
     override init() {
         super.init()
         // Add your subclass-specific initialization here.
+        let ctx = managedObjectContext!
+        let newRule = NSEntityDescription.insertNewObject(forEntityName: "ShapeRule", into: ctx) as! ShapeRule
+        newRule.degress = 60.0
     }
 
     override class var autosavesInPlace: Bool {

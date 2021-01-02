@@ -7,8 +7,14 @@
 
 import Cocoa
 
+protocol RuleUpdate {
+    func updateRule(predicate: NSPredicate)
+}
+
 class RuleViewController: NSViewController {
     @IBOutlet var ruleView: NSPredicateEditor!
+    
+    var delegate: RuleUpdate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,5 +27,9 @@ class RuleViewController: NSViewController {
                   options: 0)
         ]
         ruleView.objectValue = NSPredicate.init(format: "degress = 60.0")
+    }
+
+    @IBAction func onChangePredicate(_ sender: Any) {
+        delegate.updateRule(predicate: ruleView.predicate!)
     }
 }

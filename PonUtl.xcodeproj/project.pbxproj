@@ -18,6 +18,7 @@
 		7BADD641259F30E700AE007A /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BADD640259F30E700AE007A /* MetalKit.framework */; };
 		7BADD643259F30EF00AE007A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BADD642259F30EF00AE007A /* CoreMedia.framework */; };
 		7BADD648259F430D00AE007A /* DefaultShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 7BADD647259F430D00AE007A /* DefaultShader.metal */; };
+		7BADD652259FFF2900AE007A /* MetalRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BADD651259FFF2900AE007A /* MetalRenderer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		7BADD640259F30E700AE007A /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
 		7BADD642259F30EF00AE007A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		7BADD647259F430D00AE007A /* DefaultShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = DefaultShader.metal; sourceTree = "<group>"; };
+		7BADD651259FFF2900AE007A /* MetalRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalRenderer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			children = (
 				7BADD60B259F301500AE007A /* AppDelegate.swift */,
 				7BADD60D259F301500AE007A /* ViewController.swift */,
+				7BADD651259FFF2900AE007A /* MetalRenderer.swift */,
 				7BADD647259F430D00AE007A /* DefaultShader.metal */,
 				7BADD60F259F301500AE007A /* Document.swift */,
 				7BADD614259F301600AE007A /* Assets.xcassets */,
@@ -280,6 +283,7 @@
 			files = (
 				7BADD613259F301500AE007A /* Document.xcdatamodeld in Sources */,
 				7BADD60E259F301500AE007A /* ViewController.swift in Sources */,
+				7BADD652259FFF2900AE007A /* MetalRenderer.swift in Sources */,
 				7BADD60C259F301500AE007A /* AppDelegate.swift in Sources */,
 				7BADD610259F301500AE007A /* Document.swift in Sources */,
 				7BADD648259F430D00AE007A /* DefaultShader.metal in Sources */,

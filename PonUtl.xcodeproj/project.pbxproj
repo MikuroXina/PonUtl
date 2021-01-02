@@ -22,6 +22,7 @@
 		7BADD65D25A017DD00AE007A /* RuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BADD65C25A017DD00AE007A /* RuleViewController.swift */; };
 		7BADD66625A064FF00AE007A /* PUModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7BADD66425A064FF00AE007A /* PUModel.xcdatamodeld */; };
 		7BADD67625A0A6E000AE007A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BADD67525A0A6E000AE007A /* MainViewController.swift */; };
+		7BADD67B25A0B8FE00AE007A /* NumericRule.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BADD67A25A0B8FE00AE007A /* NumericRule.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		7BADD65C25A017DD00AE007A /* RuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleViewController.swift; sourceTree = "<group>"; };
 		7BADD66525A064FF00AE007A /* PUModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PUModel.xcdatamodel; sourceTree = "<group>"; };
 		7BADD67525A0A6E000AE007A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7BADD67A25A0B8FE00AE007A /* NumericRule.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumericRule.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,16 +119,11 @@
 		7BADD60A259F301500AE007A /* PonUtl */ = {
 			isa = PBXGroup;
 			children = (
-				7BADD65C25A017DD00AE007A /* RuleViewController.swift */,
-				7BADD66425A064FF00AE007A /* PUModel.xcdatamodeld */,
 				7BADD60B259F301500AE007A /* AppDelegate.swift */,
-				7BADD60D259F301500AE007A /* PreviewViewController.swift */,
-				7BADD651259FFF2900AE007A /* MetalRenderer.swift */,
-				7BADD647259F430D00AE007A /* DefaultShader.metal */,
 				7BADD60F259F301500AE007A /* Document.swift */,
+				7BADD66425A064FF00AE007A /* PUModel.xcdatamodeld */,
+				7BADD67F25A0BBEF00AE007A /* view */,
 				7BADD614259F301600AE007A /* Assets.xcassets */,
-				7BADD616259F301600AE007A /* Main.storyboard */,
-				7BADD67525A0A6E000AE007A /* MainViewController.swift */,
 				7BADD619259F301600AE007A /* Info.plist */,
 				7BADD61A259F301600AE007A /* PonUtl.entitlements */,
 				7BADD611259F301500AE007A /* Document.xcdatamodeld */,
@@ -159,6 +156,36 @@
 				7BADD640259F30E700AE007A /* MetalKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7BADD67F25A0BBEF00AE007A /* view */ = {
+			isa = PBXGroup;
+			children = (
+				7BADD616259F301600AE007A /* Main.storyboard */,
+				7BADD67525A0A6E000AE007A /* MainViewController.swift */,
+				7BADD68025A0BC2F00AE007A /* preview */,
+				7BADD68125A0BC4800AE007A /* rule */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		7BADD68025A0BC2F00AE007A /* preview */ = {
+			isa = PBXGroup;
+			children = (
+				7BADD647259F430D00AE007A /* DefaultShader.metal */,
+				7BADD60D259F301500AE007A /* PreviewViewController.swift */,
+				7BADD651259FFF2900AE007A /* MetalRenderer.swift */,
+			);
+			path = preview;
+			sourceTree = "<group>";
+		};
+		7BADD68125A0BC4800AE007A /* rule */ = {
+			isa = PBXGroup;
+			children = (
+				7BADD65C25A017DD00AE007A /* RuleViewController.swift */,
+				7BADD67A25A0B8FE00AE007A /* NumericRule.xib */,
+			);
+			path = rule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BADD615259F301600AE007A /* Assets.xcassets in Resources */,
+				7BADD67B25A0B8FE00AE007A /* NumericRule.xib in Resources */,
 				7BADD618259F301600AE007A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

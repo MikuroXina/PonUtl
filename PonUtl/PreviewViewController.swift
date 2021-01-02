@@ -8,7 +8,7 @@
 import Cocoa
 import MetalKit
 
-class ViewController: NSViewController {
+class PreviewViewController: NSViewController {
     @IBOutlet var previewView: MTKView!
     
     var renderer: MetalRenderer!
@@ -18,7 +18,5 @@ class ViewController: NSViewController {
 
         renderer = MetalRenderer(previewView)
         previewView.delegate = renderer
-        
-        
     }
 }

@@ -19,6 +19,7 @@
 		7BADD643259F30EF00AE007A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BADD642259F30EF00AE007A /* CoreMedia.framework */; };
 		7BADD648259F430D00AE007A /* DefaultShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 7BADD647259F430D00AE007A /* DefaultShader.metal */; };
 		7BADD652259FFF2900AE007A /* MetalRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BADD651259FFF2900AE007A /* MetalRenderer.swift */; };
+		7BADD65D25A017DD00AE007A /* RuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BADD65C25A017DD00AE007A /* RuleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		7BADD642259F30EF00AE007A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		7BADD647259F430D00AE007A /* DefaultShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = DefaultShader.metal; sourceTree = "<group>"; };
 		7BADD651259FFF2900AE007A /* MetalRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalRenderer.swift; sourceTree = "<group>"; };
+		7BADD65C25A017DD00AE007A /* RuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		7BADD60A259F301500AE007A /* PonUtl */ = {
 			isa = PBXGroup;
 			children = (
+				7BADD65C25A017DD00AE007A /* RuleViewController.swift */,
 				7BADD60B259F301500AE007A /* AppDelegate.swift */,
 				7BADD60D259F301500AE007A /* PreviewViewController.swift */,
 				7BADD651259FFF2900AE007A /* MetalRenderer.swift */,
@@ -285,6 +288,7 @@
 				7BADD60E259F301500AE007A /* PreviewViewController.swift in Sources */,
 				7BADD652259FFF2900AE007A /* MetalRenderer.swift in Sources */,
 				7BADD60C259F301500AE007A /* AppDelegate.swift in Sources */,
+				7BADD65D25A017DD00AE007A /* RuleViewController.swift in Sources */,
 				7BADD610259F301500AE007A /* Document.swift in Sources */,
 				7BADD648259F430D00AE007A /* DefaultShader.metal in Sources */,
 			);

@@ -10,9 +10,9 @@ import MetalKit
 
 class PreviewViewController: NSViewController {
     @IBOutlet var previewView: MTKView!
-    
+
     var renderer: MetalRenderer!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

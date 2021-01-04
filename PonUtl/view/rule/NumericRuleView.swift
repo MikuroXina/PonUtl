@@ -11,14 +11,14 @@ struct NumericRuleView: View {
     @State var value: Double = 0.0
     var valueBind: Binding<String> {
         Binding<String> { () -> String in
-            return "\(value)"
-        } set: { (text) in
+            "\(value)"
+        } set: { text in
             if let parsed = Double(text) {
                 value = parsed
             }
         }
-
     }
+
     var body: some View {
         HStack {
             Text("Rotation")

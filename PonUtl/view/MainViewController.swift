@@ -12,7 +12,7 @@ class MainViewController: NSViewController, RuleUpdate {
 
     var previewCtrl: PreviewViewController!
     var ruleCtrl: RuleViewController!
-    
+
     override func viewDidLoad() {
         ruleCtrl.delegate = self
     }
@@ -21,12 +21,12 @@ class MainViewController: NSViewController, RuleUpdate {
         previewCtrl = PreviewViewController(coder: coder)
         return previewCtrl
     }
-    
+
     @IBSegueAction func ruleSegue(_ coder: NSCoder) -> RuleViewController? {
-         ruleCtrl = RuleViewController(coder: coder)
+        ruleCtrl = RuleViewController(coder: coder)
         return ruleCtrl
     }
-    
+
     func updateRule(predicate: NSPredicate) {
         print(predicate)
     }

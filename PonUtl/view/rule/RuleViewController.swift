@@ -13,16 +13,14 @@ protocol RuleUpdate {
 
 class RuleViewController: NSViewController {
     @IBOutlet var rulesStackView: NSStackView!
-    
+
     var delegate: RuleUpdate!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-    func addItem(key: String, value: Any) {
-    }
 
-    func onChange(_ sender: Any) {
-    }
+    func addItem(key _: String, value _: Any) {}
+
+    func onChange(_: Any) {}
 }

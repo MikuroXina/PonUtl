@@ -9,7 +9,6 @@ import Cocoa
 import MetalKit
 
 class Document: NSPersistentDocument {
-
     override init() {
         super.init()
         // Add your subclass-specific initialization here.
@@ -26,9 +25,8 @@ class Document: NSPersistentDocument {
         // Returns the Storyboard that contains your Document window.
         let storyboard = NSStoryboard(name: NSStoryboard.Name("Main"), bundle: nil)
         let windowController = storyboard.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier("Document Window Controller")) as! NSWindowController
-        self.addWindowController(windowController)
+        addWindowController(windowController)
     }
-
 }
 
 struct PUVertex {

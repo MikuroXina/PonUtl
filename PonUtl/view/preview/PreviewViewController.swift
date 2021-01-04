@@ -8,6 +8,7 @@
 import Cocoa
 import MetalKit
 
+// PreviewViewController builds Renderer and notifies mouse events
 class PreviewViewController: NSViewController {
     @IBOutlet var previewView: MTKView!
 

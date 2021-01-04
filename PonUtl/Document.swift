@@ -8,6 +8,7 @@
 import Cocoa
 import MetalKit
 
+// Document stores and manages Project
 class Document: NSPersistentDocument {
     override init() {
         super.init()

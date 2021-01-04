@@ -11,6 +11,8 @@ protocol RuleUpdate {
     func updateRule(predicate: NSPredicate)
 }
 
+// RuleViewController builds RuleView and notifies updating Rule
+// RuleView shows key-value and notifies updating it
 class RuleViewController: NSViewController {
     @IBOutlet var rulesStackView: NSStackView!
 

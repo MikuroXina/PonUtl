@@ -7,6 +7,7 @@
 
 import Cocoa
 
+// MainViewController converts view events into user events and delegates them
 class MainViewController: NSViewController, RuleUpdate {
     @IBOutlet var objController: NSObjectController!
 

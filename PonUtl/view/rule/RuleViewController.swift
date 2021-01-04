@@ -18,9 +18,6 @@ class RuleViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let numericRuleView = NSNib.init(nibNamed: NSNib.Name("NumericRule"), bundle: Bundle.main) as! NSView
-        
     }
     
     func addItem(key: String, value: Any) {

@@ -22,7 +22,7 @@
 		7BADD65D25A017DD00AE007A /* RuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BADD65C25A017DD00AE007A /* RuleViewController.swift */; };
 		7BADD66625A064FF00AE007A /* PUModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7BADD66425A064FF00AE007A /* PUModel.xcdatamodeld */; };
 		7BADD67625A0A6E000AE007A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BADD67525A0A6E000AE007A /* MainViewController.swift */; };
-		7BADD67B25A0B8FE00AE007A /* NumericRule.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BADD67A25A0B8FE00AE007A /* NumericRule.xib */; };
+		7BADD68B25A0C19400AE007A /* NumericRuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BADD68A25A0C19400AE007A /* NumericRuleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +65,7 @@
 		7BADD65C25A017DD00AE007A /* RuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleViewController.swift; sourceTree = "<group>"; };
 		7BADD66525A064FF00AE007A /* PUModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PUModel.xcdatamodel; sourceTree = "<group>"; };
 		7BADD67525A0A6E000AE007A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		7BADD67A25A0B8FE00AE007A /* NumericRule.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumericRule.xib; sourceTree = "<group>"; };
+		7BADD68A25A0C19400AE007A /* NumericRuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericRuleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,7 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				7BADD65C25A017DD00AE007A /* RuleViewController.swift */,
-				7BADD67A25A0B8FE00AE007A /* NumericRule.xib */,
+				7BADD68A25A0C19400AE007A /* NumericRuleView.swift */,
 			);
 			path = rule;
 			sourceTree = "<group>";
@@ -292,7 +292,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BADD615259F301600AE007A /* Assets.xcassets in Resources */,
-				7BADD67B25A0B8FE00AE007A /* NumericRule.xib in Resources */,
 				7BADD618259F301600AE007A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BADD68B25A0C19400AE007A /* NumericRuleView.swift in Sources */,
 				7BADD613259F301500AE007A /* Document.xcdatamodeld in Sources */,
 				7BADD60E259F301500AE007A /* PreviewViewController.swift in Sources */,
 				7BADD66625A064FF00AE007A /* PUModel.xcdatamodeld in Sources */,
